@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/kidpantau"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"/>
+
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_password"
+        android:layout_alignStart="@+id/login_password"
+        android:layout_below="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:hint="username" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_button"
+        android:layout_alignStart="@+id/login_button"
+        android:layout_below="@+id/login_username"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Don't have an account?"
+            android:layout_marginLeft="76dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:text="Sign Up"
+            android:layout_marginLeft="5dp"
+            android:textColorLink="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
